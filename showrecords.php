@@ -11,7 +11,7 @@
 
 <?php
 
-  $DBConnect = mysql_connect("itec315.frostburg.edu","akhan03","3125589");
+  $DBConnect = mysql_connect("localhost","akhan03","31255899"); /* changed from itec and pw change */
 
     if ($DBConnect === false)
       print "Unable to connect to database. Error Number: ".mysql_errno();
@@ -24,7 +24,7 @@
   			 print "No database found.";
 
   		else {
-  			$TableName = "favres"; /*changed name from favsongs*/
+  			$TableName = "favres2"; /*changed name from favres*/
   			$SQLString = "select * from $TableName";
   			$QueryResult = @mysql_query($SQLString, $DBConnect);
 
